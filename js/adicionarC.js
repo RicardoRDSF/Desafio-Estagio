@@ -1,17 +1,15 @@
 $('#send').off().on('click', function(e){
     e.preventDefault();
+    var inputmarca=$("#marca").val()
     var inputnome=$("#nome").val()
-    var inputcodigo=$("#codigo").val()
-    var inputdescricao=$("#descricao").val()
-    var inputdataV=$("#dataV").val()
-    var inputdataF=$("#dataF").val()
+    var inputvalor=$("#preco").val()
+    var inputdataR=$("#referencia").val()
     $('#tabProdutos').append(`
     <tr>
+        <td>${inputmarca}</td>
         <td>${inputnome}</td>
-        <td>${inputcodigo}</td>
-        <td>${inputdescricao}</td>
-        <td>${inputdataF}</td>
-        <td>${inputdataV}</td>
+        <td>${inputvalor}</td>
+        <td>${inputdataR}</td>
         <button class="btnAlterar">Alterar</button>
     </tr>
     `);
