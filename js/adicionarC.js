@@ -4,7 +4,7 @@ $('#send').off().on('click', function(e){
     var inputnome=$("#nome").val()
     var inputvalor=$("#preco").val()
     var inputdataR=$("#referencia").val()
-    $('#tabProdutos').append(`
+    $('#tabCarros').append(`
     <tr>
         <td>${inputmarca}</td>
         <td>${inputnome}</td>
@@ -22,12 +22,13 @@ $('#send').off().on('click', function(e){
         type: 'success'
     });
 });
-$(document).ready( function () {
-    $('#tabProdutos').DataTable( {
-        retrieve: true,
-        paging: false,
-        ordering:false,
-        scrolly: 400,
-        searching: false,
-    });
-});
+// $(document).ready( function () {
+//     $('#tabCarros').DataTable( {
+//         retrieve: true,
+//         paging: false,
+//         ordering:false,
+//         scrolly: 400,
+//         searching: false,
+//         autoWidth: true,
+//     });
+// });
