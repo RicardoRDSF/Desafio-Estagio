@@ -9,17 +9,15 @@ xhr.onreadystatechange = function() {
         console.log(data)
         $('#tabCarros').DataTable ( {
             select: true,
-            retrieve: true,
             ordering:false,
-            scrolly: 400,
             autoWidth: true,
             data: data,
             columns: [
-                { data: 'fipe_marca'},
-                { data: 'fipe_name'},
-                { data: 'id'},
-                { data: 'key'}
-            ]
+                { data: 'fipe_marca', sTitle: "Marca" },
+                { data: 'fipe_name', sTitle: "Nome" },
+                { data: 'id' , sTitle: "Titulo"},
+                { data: 'key' , sTitle: "Key" }
+                ]
         });
     }
 }
