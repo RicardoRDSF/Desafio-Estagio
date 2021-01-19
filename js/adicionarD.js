@@ -1,16 +1,13 @@
 $('#send').off().on('click', function(e){
     e.preventDefault();
-    var fipe_marca = $("#marca").val()
-    var fipe_name = $("#nome").val()
-    var id = $("#id").val()
-    var key = $("#key").val()
-    var table = $('#tabCarros').DataTable();
+    var _id = $("#id").val()
+    var text = $("#fatos").val()
+    var table = $('#gatotable').DataTable();
     table.rows.add([{
-        fipe_marca,
-        fipe_name,
-        id,
-        key,
-    }]);
+        _id,
+        text,
+    }])
+    .draw();
 
     $.notify({
         message: 'Cadastro feito com sucesso' 

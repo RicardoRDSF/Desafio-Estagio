@@ -3,32 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Carros</title>
+    <title>Fatos sobre gatos</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="./css/bootstrap-theme.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css" type="text/css">
 </head>
 <body>
     <div class="text-center">
-        <h1>Cadastro de Carros para Fipe</h1>
+        <h1>Cadastro de Fatos</h1>
     </div>
         <div class="container">
             <form method="post" action="submit">
-                <div class="form-group">
-                    <label></label>
-                    <input type="text" id="marca" placeholder="Marca" required class="form-control">
-                </div>
-                <div class="form-group">
-                    <label></label>
-                    <input type="text" id="nome" placeholder="Nome" required class="form-control">
-                </div>
                 <div class="form-group">
                     <label></label>
                     <input type="text" id="id" placeholder="ID" required class="form-control">
                 </div>
                 <div class="form-group">
                     <label></label>
-                    <input type="text" id="key" placeholder=Key required class="form-control">
+                    <input type="text" id="fatos" placeholder="Fatos" required class="form-control">
                 </div>
                 <button class="btn-primary" id="send">
                     <span class="glyphicon glyphicon-send">
@@ -37,13 +29,14 @@
                 </button>
             </form>
             <div class="text-center">
-                <h1>Carros Cadastrados</h1>
+                <h1>Tabela de Fatos</h1>
             </div>
             <div>
-                <table id="tabCarros" >
+                <table id="gatotable" >
                     <thead>
                         <tr>
                             <button id="edit">Editar</button>
+                            <button id="delete">Deletar</button>
                         </tr>
                     </thead>
                     <tbody>
