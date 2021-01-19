@@ -15,9 +15,14 @@
         table.row('.selected').remove().draw( false );
     } );
 
-    $('#edit').click( function () {
+    $('#edit').click( function edit() {
         var table = $('#gatotable').DataTable();
-        var teste = table.row('.selected').data();
-        console.log(teste)
-        
+        var dados = table.row('.selected').data();
+        $('#id').val( dados._id );
+        $('#fatos').val( dados.text );
+        table.row('.selected').remove().draw( false );
+        $("#send").text("Alterar");
+        $("#send").on('click', ()=>{
+            $("#send").text("Cadastrar");
+        });
     } );

@@ -7,7 +7,6 @@ xhr.send(null);
 xhr.onreadystatechange = function() {
     if(xhr.readyState === 4){
         var data = (JSON.parse(xhr.responseText));
-        console.log(data)
         $('#gatotable').DataTable ( {
             select: true,
             ordering:false,

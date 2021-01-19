@@ -8,6 +8,8 @@ $('#send').off().on('click', function(e){
         text,
     }])
     .draw();
+    $('#id').val('');
+    $('#fatos').val('')
 
     $.notify({
         message: 'Cadastro feito com sucesso' 
